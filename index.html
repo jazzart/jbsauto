@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="radom auto mechanika diagnostyka naprawa pojazdów" />
+	<meta name="keywords" content="radom mechanika, radom, auto naprawa diagnostyka" />
+	<link rel='stylesheet' id='screencss'  href='lnk/style.css' type='text/css' media='screen' />
+	<title>JBS AUTO</title>
+</head>
+<body ng-app="jbs" class="bd">
+	<div id="wrapper" ng-controller="main">
+		<header>
+			<h1>
+				JBS Mechanika Samochodowa Radom naprawa aut
+			</h1>
+			<div id="desc">
+				<p>naprawy samochodowe Radom</p>
+			</div>
+			<div class="phony">
+				<p>606 934 990</p>
+				<img src="img/phone25.png" alt="telephone">
+			</div>
+		</header> 
+		<nav>
+			<ul class="main-nav">
+				<li class="home"><a href="/">Strona główna</a></li>
+				<li class="service"><a href="#/uslugi">Usługi</a></li>
+				<li class="about"><a href="#/onas">O nas</a></li>
+				<li class="news"><a href="#/aktualnosci">Aktualności</a></li>
+				<li class="contact"><a href="#/kontakt">Kontakt</a></li>
+			</ul>
+		</nav>
+		<div id="content" ng-view>
+			
+		</div>
+	</div>
+
+
+<script src="lnk/jquery.js"></script>
+<script src="lnk/angular.min.js"></script>
+<script src="lnk/angular-resource.min.js"></script>
+<script src="lnk/angular-route.min.js"></script>
+<script src="lnk/sc.js"></script>
+<script>
+	$(function(){
+		$("li.home a").addClass('active');
+		var navs = $("ul.main-nav li a");
+		navs.click(function(e){
+			var t = $(this);
+			t.addClass('active');
+			t.parent().siblings().find('a').removeClass("active");
+		});
+	})
+</script>
+</body>
+</html>

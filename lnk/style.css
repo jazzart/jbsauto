@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(41,41,41);
+}
+
+ul, li, body {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	width: 900px; 
+	height: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+header h1 {
+	text-indent: -9999px;
+	background: url(../img/jbs.png) no-repeat;
+	height: 170px;
+	width: 190px;
+	float: left;
+	margin-top: 25px;
+}
+header div#desc {
+	text-indent: -9999px;
+	background: url(../img/automech.png) no-repeat;
+	min-height: 200px;
+	width: 300px;
+	float: left;
+}
+.phony {
+	color: #fff;
+	font: bold 17px/1.7 SegoeUI, Segoe, Trebuchet, sans-serif;
+	width: 140px;
+	height: 43px;
+	padding: 5px;
+	float: right;
+	border-radius: 5px;
+	border: 3px solid #fff;
+	border-bottom: 0;
+	position: absolute;
+	top: 167px;
+	right: 10px;
+	z-index: 5;
+}
+.phony img {
+	position: absolute;
+	top:4px;
+	right: 8px;
+}
+.phony p {
+	margin-left: 7px;
+}
+nav {
+	width: 170px;
+	margin-left: -100px;
+	padding-top: 250px;
+	/*float: left;*/
+	font-family: SegoeUI, Segoe, Trebuchet, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	z-index: 800;
+}
+
+nav ul {
+	list-style: none;
+	color: #FFFFFF;
+	width: 160px;
+	overflow: visible;
+}
+nav ul li {
+	width: 100%;	
+	height: 30px;
+	margin-top: 30px;
+	border: 2px solid white;
+	border-radius: 6px;
+	padding: 0;
+	text-align: center;
+	background-color: #292929;
+	display: block;
+	cursor: pointer;
+}
+nav ul li a {
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	vertical-align: middle;
+	line-height: 1.9;
+	padding: 0;
+	color: #FFFFFF;
+	background-color: #292929;
+	width: 100%;
+	height: 100%;
+	display: block;
+} 
+nav ul li a.active {
+	display: block;
+	color: #292929;
+	background-color: #FFFFFF;
+}
+nav ul li:hover a, 
+nav ul li:hover {
+	display: block;
+	color: #292929;
+	background-color: #FFFFFF;
+}
+#content {
+	background-color: #292929;
+	width: 900px;
+	height: 680px;
+	position: absolute;
+	top: 210px;
+	border: 3px solid #FFF;
+	border-radius: 6px;
+	z-index: 10;
+}
+#content h1 {
+	font: 27px Segoe, Tahoma, sans-serif;
+	color:  #FFF;
+	margin: 60px 0 0 125px;
+}
+#content p {
+	font: 15px Segoe, Tahoma, sans-serif;
+	color:  #FFF;
+	line-height: 1.5;
+	width: 600px;
+	margin: 15px 0 0 125px;
+} 
+#content li {
+	line-height: 1.4;
+}
+.service-list {
+	margin: 15px 0 0 125px;
+	font: 12px Segoe, Tahoma, sans-serif;
+	color:  #FFF;
+}
+.service-list h3 {
+	font: bold 12px Segoe, Tahoma, sans-serif;
+	color:  #FFF;
+	margin: 9px 0;
+	text-transform: uppercase;
+}
+.bd #wrapper #content div#sidenote p {
+	font: bold 13px Segoe, Tahoma, sans-serif;
+	margin-top: 22px;
+/*	text-transform: lowercase;*/
+}
+.service-list h2 {
+	margin: 15px 0;
+	font: bold 14px Segoe, Tahoma, sans-serif;
+	color:  #FFF;
+}
+
+#content .cts p.ml {
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-left: 85px;
+	background: url(../img/env.png) no-repeat 0 -1px;
+	width: 200px; 
+	height: 60px;
+}
+
+#content .cts p.phn {
+	padding-top: 10px;
+	padding-left: 85px;
+	background: url(../img/cabphone.png) no-repeat 24px -1px;
+	width: 200px; 
+	height: 60px;
+}
