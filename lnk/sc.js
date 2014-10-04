@@ -27,4 +27,13 @@ jbsapp.config([ '$routeProvider',function ($routeProvider) {
 	var b = "o2.pl";
 	$scope.adrs = a + b;
 	$scope.tel = "606 934 990";
+
+	$("#carousel").cycle({
+		slides: ">img", 
+		speed: 2000,
+		pauseOnHover: true,
+		timeout: 2500,
+		fx: "scrollHorz",
+		pager: ">.cycle-pager"  
+	});
 });
