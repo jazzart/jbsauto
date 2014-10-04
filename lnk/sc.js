@@ -34,6 +34,6 @@ jbsapp.config([ '$routeProvider',function ($routeProvider) {
 		pauseOnHover: true,
 		timeout: 2500,
 		fx: "scrollHorz",
-		pager: ">.cycle-pager"  
+		pager: ">.around > .cycle-pager"  
 	});
 });
