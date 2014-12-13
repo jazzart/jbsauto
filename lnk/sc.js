@@ -36,4 +36,6 @@ jbsapp.config([ '$routeProvider',function ($routeProvider) {
 		fx: "scrollHorz",
 		pager: ">.around > .cycle-pager"  
 	});
+
+
 });
