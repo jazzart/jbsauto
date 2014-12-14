@@ -179,6 +179,15 @@ nav ul li:hover {
 	width: 200px; 
 	height: 60px;
 }
+
+#content .cts p.house {
+	padding-top: 10px;
+	padding-left: 85px;
+	background: url(../img/hou.png) no-repeat 24px -1px;
+	width: 200px; 
+	height: 60px;
+}
+
 .cycle-pager {
 	font-size: 3em;
 	margin: 0 auto;

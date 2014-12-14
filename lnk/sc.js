@@ -27,6 +27,7 @@ jbsapp.config([ '$routeProvider',function ($routeProvider) {
 	var b = "o2.pl";
 	$scope.adrs = a + b;
 	$scope.tel = "606 934 990";
+	$scope.place = "Janiszew 99/2";
 	var $carousel = $("#carousel");
 	var $slides = $carousel.find("li");
 
