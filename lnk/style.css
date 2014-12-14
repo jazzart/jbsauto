@@ -121,6 +121,11 @@ nav ul li:hover {
 	border-radius: 6px;
 	z-index: 10;
 }
+
+.short #content {
+	height: 550px;
+}
+
 #content h1 {
 	font: 27px Segoe, Tahoma, sans-serif;
 	color:  #FFF;
@@ -192,11 +197,15 @@ nav ul li:hover {
 }
 
 #content #carousel {
-	margin: 20px 0 0 50px;
+	margin: 40px 0 0 50px;
 }
 
 #content #carousel .around {
 	margin-left: -50px;
+}
+
+#content #carousel li {
+	overflow: hidden;
 }
 
 #content #carousel img {
@@ -204,6 +213,19 @@ nav ul li:hover {
 	border: 2px solid white;
 	margin: 0 auto;
 	border-radius: 20px;
+}
+
+#content #carousel li.initial {
+	position: relative;
+}
+
+#content #carousel li p {
+	font: 13px/1.5 Segoe,Tahoma,sans-serif;
+	color: #fff;
+	width: 500px; 
+	position: absolute;
+	top: 45px;
+	left: -75px;
 }
 
 #map {
