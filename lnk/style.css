@@ -265,6 +265,16 @@ box-shadow: 9px 11px 8px 1px rgba(0,0,0,0.4),
                       12px 12px 0px 8px rgba(0,0,0,0.4) inset;
 }
 
+a.trackto {
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a.trackto:hover {
+		text-decoration: underline;
+}
+
 .vjs-default-skin { color: #ffffff; }
 .vjs-default-skin .vjs-play-progress,
 .vjs-default-skin .vjs-volume-level { background-color: #3c9ed4 }

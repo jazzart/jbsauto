@@ -44,39 +44,6 @@
 <script src="lnk/angular-route.min.js"></script>
 <script src="lnk/video-js.js"></script>
 <script src="lnk/sc.js"></script>
-<script>
-	$(function(){
 
-		var url = window.location.href;
-		var cut = url.slice(url.indexOf("#"));
-		var $body = $("body");
-		var navs = $("ul.main-nav li a");
-		checkStyle(cut);
-		$.each(navs, function(i, el) {
-			var $el = $(el);
-			if ($el.attr("href") === cut) {
-				$el.addClass('active');
-			}
-		});
-		navs.click(function(e){
-			var t = $(this);
-			var href = $(e.target).attr("href");
-			t.addClass('active');
-			t.parent().siblings().find('a').removeClass("active");
-			checkStyle(href);
-		});
-
-
-		function checkStyle(cut) {
-			if (cut === "/" || cut === "#/" || cut ==="#/kontakt") {
-				$body.addClass("short");
-			} else {
-				$body.removeClass("short");
-			}
-		}
-
-	})
-
-</script>
 </body>
 </html>
