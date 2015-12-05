@@ -282,3 +282,30 @@ a.trackto:hover {
 .vjs-default-skin .vjs-big-play-button { background: rgba(74,72,72,0.7) }
 .vjs-default-skin .vjs-slider { background: rgba(74,72,72,0.2333333333333333) }
 .vjs-default-skin .vjs-control-bar { font-size: 89% }
+
+a.copyright {
+	border: 2px solid #fff;
+	border-left: 0;
+	border-radius: 4px;
+	position: absolute;
+	bottom: 160px;
+	right: -120px;
+	color: #fff;
+	font: 9px/1.2 Cambria,Georgia, serif;
+	text-decoration: none;
+
+}
+
+.short a.copyright {
+	bottom: 360px;
+}
+
+.cright {
+	background: url(../img/webcopy.png) no-repeat 20px 10px;
+	width: 120px;
+	height: 60px;
+	cursor: pointer;
+}
+.cright p {
+	padding: 5px 0 0 16px;
+}
