@@ -22,6 +22,7 @@ jbsapp.config([ '$routeProvider',function ($routeProvider) {
 		templateUrl: '/tree/contact.html', 
 		controller: 'main'
 	})
+	.otherwise('/');
 }]).controller('main', function($scope) {
 	var a = "jbs-78@";
 	var b = "o2.pl";
