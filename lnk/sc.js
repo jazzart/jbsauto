@@ -22,8 +22,10 @@ jbsapp.config([ '$routeProvider',function ($routeProvider) {
 		templateUrl: '/tree/contact.html', 
 		controller: 'main'
 	})
-	.otherwise('/');
-}]).controller('main', function($scope) {
+	.otherwise({
+        redirectTo: '/'
+    });
+}]).controller('main', function($scope, $location) {
 	var a = "jbs-78@";
 	var b = "o2.pl";
 	$scope.adrs = a + b;
@@ -38,15 +40,19 @@ jbsapp.config([ '$routeProvider',function ($routeProvider) {
 	var cut = url.slice(url.indexOf("#"));
 	var $body = $("body");
 	var navs = $("ul.main-nav li a");
+	console.log('url: ' + url);
 
-	$carousel.cycle({
+	if (url === "jbsauto.eu/#/" || url === "http://jbsauto.eu/#/") {
+		$carousel.cycle({
 		slides: $slides, 
 		speed: 3000,
 		pauseOnHover: true,
 		timeout: 2500,
 		fx: "scrollHorz",
 		pager: ">.around > .cycle-pager"  
-	});
+		});
+	}
+
 
 	$("a.trackto").click(function (event) {
 		event.preventDefault();
@@ -82,4 +88,6 @@ jbsapp.config([ '$routeProvider',function ($routeProvider) {
 		}
 	}
 
-});
+}).controller('error', ['$location', function($location) {
+	$location.path = "/kontakt";
+}]);
